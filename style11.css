@@ -1,0 +1,77 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Static Box */
+.static-box {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Relative Box */
+.relative-box {
+    background-color: #fff9c4;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative; /* Relative positioning */
+    top: 10px; /* Moves down 10px from its original position */
+    left: 10px; /* Moves right 10px from its original position */
+}
+
+/* Absolute Box */
+.absolute-box {
+    background-color: #ffe0b2;
+    padding: 20px;
+    position: absolute; /* Absolute positioning */
+    top: 100px; /* Positioning 100px from the top of the nearest positioned ancestor */
+    left: 50px; /* Positioning 50px from the left of the nearest positioned ancestor */
+}
+
+/* Fixed Box */
+.fixed-box {
+    background-color: #d1c4e9;
+    padding: 20px;
+    position: fixed; /* Fixed positioning */
+    top: 10px; /* Fixed 10px from the top of the viewport */
+    right: 10px; /* Fixed 10px from the right of the viewport */
+}
+
+/* Sticky Box */
+.sticky-box {
+    background-color: #c8e6c9;
+    padding: 20px;
+    position: sticky; /* Sticky positioning */
+    top: 60px; /* Sticky when the viewport is 60px from the top */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

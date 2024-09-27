@@ -1,0 +1,82 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    position: relative;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Box Styles */
+.box {
+    position: absolute; /* Positioning to allow overlap */
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Box 1 */
+.box1 {
+    background-color: #00796b;
+    top: 50px;
+    left: 50px;
+    z-index: 1; /* Lower z-index */
+}
+
+/* Box 2 */
+.box2 {
+    background-color: #e64a19;
+    top: 30px;
+    left: 90px;
+    z-index: 3; /* Higher z-index */
+}
+
+/* Box 3 */
+.box3 {
+    background-color: #fbc02d;
+    top: 70px;
+    left: 70px;
+    z-index: 2; /* Middle z-index */
+}
+
+/* Fixed Box */
+.fixed-box {
+    position: fixed; /* Fixed positioning */
+    top: 20px;
+    right: 20px;
+    background-color: #3f51b5;
+    width: 250px;
+    padding: 20px;
+    color: white;
+    z-index: 5; /* Highest z-index */
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

@@ -1,0 +1,22 @@
+/* Element Selector - Styles all <p> elements */
+p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Class Selector - Styles all elements with class="highlight" */
+.highlight {
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ID Selector - Styles the element with id="unique-element" */
+#unique-element {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}

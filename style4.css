@@ -1,0 +1,47 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Default Box Model: Content-Box */
+.content-box-model {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid #007bff;
+    margin-bottom: 30px;
+    background-color: #e7f3ff;
+    box-sizing: content-box; /* Default box model */
+}
+
+/* Border-Box Model */
+.border-box-model {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid #28a745;
+    margin-bottom: 30px;
+    background-color: #e0ffe7;
+    box-sizing: border-box; /* Border-box model */
+}
+
+/* Example with Padding, Border, and Margin */
+.box-example {
+    width: 300px;
+    height: 150px;
+    padding: 20px; /* Padding inside the box */
+    border: 5px solid #ffc107; /* Border around the box */
+    margin: 20px; /* Margin ou

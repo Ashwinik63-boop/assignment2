@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Example</title>
+    <link rel="stylesheet" href="style10.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Responsive Images with srcset</h1>
+    </header>
+
+    <section class="content">
+        <h2>Example 1: Landscape Image</h2>
+        <img
+            src="images/landscape-small.jpg" 
+            srcset="images/landscape-small.jpg 480w,
+                    images/landscape-medium.jpg 768w,
+                    images/landscape-large.jpg 1200w"
+            sizes="(max-width: 600px) 100vw,
+                   (max-width: 1200px) 50vw,
+                   33vw"
+            alt="Beautiful landscape">
+        
+        <h2>Example 2: High-Resolution Image</h2>
+        <img
+            src="images/flower-lowres.jpg" 
+            srcset="images/flower-lowres.jpg 1x,
+                    images/flower-highres.jpg 2x"
+            alt="Close-up of a flower">
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Responsive Images Example. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

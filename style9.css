@@ -1,0 +1,165 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Basic Layout */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.section {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Breakpoint 1: Medium Screens (Tablets) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .sidebar {
+        margin-bottom: 20px;
+    }
+}
+
+/* Breakpoint 2: Small Screens (Mobile) */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .nav {
+        font-size: 0.9rem;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .section, .sidebar {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .sidebar {
+        display: none; /* Hide the sidebar on very small screens */
+    }
+
+    .footer {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+
+/* Breakpoint 3: Large Screens (Desktops) */
+@media (min-width: 1024px) {
+    body {
+        padding: 40px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        font-size: 1.1rem;
+    }
+
+    .sidebar {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}

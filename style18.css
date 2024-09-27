@@ -1,0 +1,77 @@
+/* Define CSS variables */
+:root {
+    --primary-color: #4CAF50; /* Green */
+    --secondary-color: #2196F3; /* Blue */
+    --background-color: #f4f4f4; /* Light Grey */
+    --text-color: #333; /* Dark Text */
+    --font-size: 16px; /* Base Font Size */
+    --heading-font-size: 24px; /* Heading Font Size */
+    --spacing: 10px; /* Base Spacing */
+    --card-background: white; /* Card Background Color */
+}
+
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: var(--spacing) * 2; /* Double spacing for padding */
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: var(--spacing) * 2; /* Double spacing for padding */
+}
+
+.content {
+    max-width: 800px;
+    margin: var(--spacing) * 2 auto; /* Double spacing for margin */
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--card-background);
+    padding: var(--spacing) * 2; /* Double spacing for padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing) * 2; /* Double spacing for margin */
+}
+
+.card-title {
+    font-size: var(--heading-font-size);
+    margin-bottom: var(--spacing); /* Single spacing for margin */
+}
+
+/* Button Styles */
+.btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--spacing); /* Single spacing for padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-size);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darken(var(--secondary-color), 10%); /* Slightly darker on hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: var(--spacing) * 2; /* Double spacing for padding */
+    margin-top: var(--spacing) * 2; /* Double spacing for margin */
+}

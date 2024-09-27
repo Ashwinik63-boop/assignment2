@@ -1,0 +1,77 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+/* Box Styles */
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #00796b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+/* Transformations */
+/* Box 1: Translate */
+#box1 {
+    transform: translate(50px, 30px); /* Moves element 50px right, 30px down */
+}
+
+/* Box 2: Rotate */
+#box2 {
+    transform: rotate(45deg); /* Rotates element 45 degrees */
+}
+
+/* Box 3: Scale */
+#box3 {
+    transform: scale(1.5); /* Scales element to 150% size */
+}
+
+/* Box 4: Skew */
+#box4 {
+    transform: skew(20deg, 10deg); /* Skews element by 20 degrees on X-axis and 10 degrees on Y-axis */
+}
+
+/* Box 5: Combined Transform */
+#box5 {
+    transform: translate(30px, 30px) rotate(30deg) scale(1.2) skew(10deg, 5deg); /* Combines multiple transformations */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

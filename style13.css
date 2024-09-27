@@ -1,0 +1,60 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* Box Styles */
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #00796b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.5s ease; /* Default transition */
+}
+
+/* Box 1 Hover Effect */
+#box1 {
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Specific properties */
+}
+
+#box1:hover {
+    background-color: #e64a19; /* Change background color */
+    transform: scale(1.1); /* Scale up */
+}
+
+/* Box 2 Click Effect */
+#box2 {
+    transition: all 0.3s ease-in-out 0.2s; /* With delay */
+}
+
+#box2:active {
+    background-color: #fbc02d; /* Change background color on click */
+    transform: rotate(10deg); /* Rotate on click */
+}

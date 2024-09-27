@@ -1,0 +1,113 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Pseudo-Class: Hover */
+.card {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #004d40; /* Darker color on hover */
+}
+
+/* Pseudo-Class: Active */
+.btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:active {
+    background-color: #0b79d0; /* Change background on click */
+}
+
+/* Pseudo-Class: nth-child */
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    background-color: #eeeeee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.list li:nth-child(odd) {
+    background-color: #cccccc; /* Apply to odd list items */
+}
+
+/* Pseudo-Element: ::before */
+.highlight {
+    position: relative;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.highlight::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #f44336;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+/* Pseudo-Element: ::after */
+.highlight-after {
+    position: relative;
+    font-size: 18px;
+}
+
+.highlight-after::after {
+    content: ' 🔥';
+    color: #ff5722;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

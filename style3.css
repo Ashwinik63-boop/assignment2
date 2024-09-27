@@ -1,0 +1,80 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #007bff;
+}
+
+/* Font Families */
+.serif {
+    font-family: 'Times New Roman', serif;
+}
+
+.sans-serif {
+    font-family: Arial, sans-serif;
+}
+
+.monospace {
+    font-family: 'Courier New', monospace;
+}
+
+/* Font Sizes */
+.small {
+    font-size: 12px;
+}
+
+.medium {
+    font-size: 18px;
+}
+
+.large {
+    font-size: 24px;
+}
+
+/* Font Weights */
+.light {
+    font-weight: 300;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* Font Styles */
+.normal-style {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Line Height */
+.tight {
+    line
